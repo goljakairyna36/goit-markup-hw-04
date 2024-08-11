@@ -346,6 +346,7 @@ background-color: #404bbf;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width:264px;
+   
 }
 
 .container-footer-media{
@@ -386,7 +387,8 @@ background-color: #404bbf;
     gap: 24px;
 }
 
-.social-link{
+.social-link,
+.social-link-footer{
     display: flex;
     align-items: center;
     justify-content: center;

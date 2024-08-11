@@ -44,6 +44,7 @@ h1,h2,h3,h4,h5,h6,p{
 img{
     display: block
 }
+
 /* header */ 
 
 .page-header {
@@ -86,6 +87,17 @@ img{
     color: #2e2f42;
     padding: 24px 0;
     display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item-psevdo::after {
+    content: "_";
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background: #404bbf;
+    display: block;
 }
 
 .nav-link:hover,
@@ -117,6 +129,8 @@ img{
     color: #434455;
     padding: 24px 0;
     display: block;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -133,6 +147,10 @@ img{
 }
 .section-title{
     background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -167,12 +185,16 @@ img{
     min-width: 169px;
     height: 56px;
     border: none;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
 background-color: #404bbf;
 }
+
+/*subtitle*/
 
 .desc,
 .team,
@@ -227,6 +249,7 @@ background-color: #404bbf;
     flex-direction: column;
     display: flex;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
 }
 
 .container-team{
@@ -291,10 +314,10 @@ background-color: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
-.container-footer{
-}
+/*footer*/
 
 .page-footer{
     background: #2e2f42;
@@ -317,6 +340,65 @@ background-color: #404bbf;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+    
 }
 
+.container-footer{
+    position: relative;
+}
 
+.container-footer-media{
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    margin-left: 120px;
+}
+
+.subtitle-footer-media{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+/*svg*/
+.icon{ 
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin: 24px 100px;
+    background: #f4f4fd;
+}
+
+.social-links-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links-svg{
+    fill: #f4f4fd;
+}
+
+.social-link:hover{
+    background-color: #404bbf;
+}
+
+.social-link-footer:hover{
+background-color: #31d0aa;
+cubic-bezier: (0.4, 0, 0.2, 1);
+
+}

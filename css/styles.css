@@ -325,6 +325,12 @@ background-color: #404bbf;
     padding-bottom: 100px;
 }
 
+.container-footer {
+    display: flex;
+    align-items: baseline;
+    margin-right: 120px;
+}
+
 .footer-logo .logo-studio {
     color: #f4f4fd;
 }
@@ -339,22 +345,17 @@ background-color: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px;
-    
-}
-
-.container-footer{
-    display: inline-block;
-    align-items: baseline;
-    margin-right: 120px;
+    max-width:264px;
 }
 
 .container-footer-media{
-    display: inline-block;
-    align-items: top;
-    }
+    display: flex;
+    align-items: center;
+    
+}
 
 .text-footer-media{
+    display: inline-block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -376,6 +377,8 @@ background-color: #404bbf;
     padding: 24px 100px;
     
 }
+
+
 
 .social-links-list {
     display: flex;

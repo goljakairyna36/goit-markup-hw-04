@@ -398,7 +398,5 @@ background-color: #404bbf;
 }
 
 .social-link-footer:hover{
-background-color: #31d0aa;
-cubic-bezier: (0.4, 0, 0.2, 1);
-
+    background-color: #31d0aa;
 }

@@ -94,12 +94,12 @@ img{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-item-psevdo{
+.nav-link-psevdo{
     position: relative;
     color: #404bbf;
 }
 
-.nav-item-psevdo::after {
+.nav-link-psevdo::after {
     content: "_";
     position: absolute;
     left: 0;
@@ -333,7 +333,7 @@ background-color: #404bbf;
     overflow: hidden;
 }
 
-.container-portfolio-wrap{
+.portfolio-item{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 0px 1px 1px rgba(46, 47, 66, 0.16),
 0px 2px 1px rgba(46, 47, 66, 0.08);

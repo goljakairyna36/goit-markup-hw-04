@@ -91,13 +91,22 @@ img{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-item-psevdo{
+    position: relative;
+    color: #404bbf;
+}
+
 .nav-item-psevdo::after {
     content: "_";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
     border-radius: 2px;
-    width: 48px;
+    width: 100%;
     height: 4px;
-    background: #404bbf;
+    background-color: #404bbf;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,

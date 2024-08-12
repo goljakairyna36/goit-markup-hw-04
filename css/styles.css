@@ -100,7 +100,7 @@ img{
 }
 
 .nav-link-psevdo::after {
-    content: "_";
+    content: "";
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -163,8 +163,7 @@ img{
     background-size: cover;
     background-position: center;
     padding-top: 188px;
-    padding-bottom: 188px; 
-    max-width: 1440px;
+    padding-bottom: 188px;
 }
 
 .title{
